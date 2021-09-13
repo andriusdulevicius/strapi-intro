@@ -1,0 +1,36 @@
+{
+  "kind": "collectionType",
+  "collectionName": "canvas_shippings",
+  "info": {
+    "name": "canvas-shipping",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "text": {
+      "type": "text"
+    },
+    "subtitle": {
+      "type": "string"
+    },
+    "times": {
+      "type": "string"
+    },
+    "canvas_stores": {
+      "via": "store",
+      "collection": "canvas-stores"
+    },
+    "contacts": {
+      "via": "contact",
+      "collection": "canvas-contacts"
+    }
+  }
+}

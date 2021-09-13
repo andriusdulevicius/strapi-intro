@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/canvas-shippings",
+      "handler": "canvas-shipping.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/canvas-shippings/count",
+      "handler": "canvas-shipping.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/canvas-shippings/:id",
+      "handler": "canvas-shipping.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/canvas-shippings",
+      "handler": "canvas-shipping.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/canvas-shippings/:id",
+      "handler": "canvas-shipping.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/canvas-shippings/:id",
+      "handler": "canvas-shipping.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

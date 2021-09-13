@@ -1,0 +1,44 @@
+{
+  "kind": "collectionType",
+  "collectionName": "canvas_special_offers",
+  "info": {
+    "name": "canvas-special-offer",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "unique": true,
+      "required": true
+    },
+    "link": {
+      "type": "string",
+      "unique": true,
+      "required": true
+    },
+    "text": {
+      "type": "text"
+    },
+    "discount": {
+      "type": "integer"
+    },
+    "image": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    }
+  }
+}

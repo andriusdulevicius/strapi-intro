@@ -1,0 +1,43 @@
+{
+  "kind": "collectionType",
+  "collectionName": "canvas_paid_blogs",
+  "info": {
+    "name": "canvas-paid-blog",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "text": {
+      "type": "text"
+    },
+    "summary": {
+      "type": "text"
+    },
+    "image": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "address": {
+      "type": "string"
+    },
+    "link": {
+      "type": "string"
+    }
+  }
+}

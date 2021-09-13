@@ -1,0 +1,28 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/canvas-hero",
+      "handler": "canvas-hero.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/canvas-hero",
+      "handler": "canvas-hero.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/canvas-hero",
+      "handler": "canvas-hero.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

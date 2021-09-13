@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/canvas-contacts",
+      "handler": "canvas-contacts.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/canvas-contacts/count",
+      "handler": "canvas-contacts.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/canvas-contacts/:id",
+      "handler": "canvas-contacts.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/canvas-contacts",
+      "handler": "canvas-contacts.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/canvas-contacts/:id",
+      "handler": "canvas-contacts.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/canvas-contacts/:id",
+      "handler": "canvas-contacts.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

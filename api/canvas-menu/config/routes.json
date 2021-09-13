@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/canvas-menus",
+      "handler": "canvas-menu.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/canvas-menus/count",
+      "handler": "canvas-menu.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/canvas-menus/:id",
+      "handler": "canvas-menu.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/canvas-menus",
+      "handler": "canvas-menu.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/canvas-menus/:id",
+      "handler": "canvas-menu.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/canvas-menus/:id",
+      "handler": "canvas-menu.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

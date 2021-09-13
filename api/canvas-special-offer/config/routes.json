@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/canvas-special-offers",
+      "handler": "canvas-special-offer.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/canvas-special-offers/count",
+      "handler": "canvas-special-offer.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/canvas-special-offers/:id",
+      "handler": "canvas-special-offer.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/canvas-special-offers",
+      "handler": "canvas-special-offer.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/canvas-special-offers/:id",
+      "handler": "canvas-special-offer.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/canvas-special-offers/:id",
+      "handler": "canvas-special-offer.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

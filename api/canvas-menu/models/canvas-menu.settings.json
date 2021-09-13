@@ -1,0 +1,24 @@
+{
+  "kind": "collectionType",
+  "collectionName": "canvas_menus",
+  "info": {
+    "name": "canvas_menu"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "unique": true,
+      "required": true
+    },
+    "link": {
+      "type": "string",
+      "unique": false
+    }
+  }
+}

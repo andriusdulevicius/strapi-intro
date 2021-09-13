@@ -1,0 +1,27 @@
+{
+  "kind": "collectionType",
+  "collectionName": "canvas_stores",
+  "info": {
+    "name": "canvas-stores",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "shopTitle": {
+      "type": "string"
+    },
+    "address": {
+      "type": "string"
+    },
+    "store": {
+      "collection": "canvas-shipping",
+      "via": "canvas_stores",
+      "dominant": true
+    }
+  }
+}

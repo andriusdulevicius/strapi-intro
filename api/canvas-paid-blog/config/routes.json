@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/canvas-paid-blogs",
+      "handler": "canvas-paid-blog.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/canvas-paid-blogs/count",
+      "handler": "canvas-paid-blog.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/canvas-paid-blogs/:id",
+      "handler": "canvas-paid-blog.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/canvas-paid-blogs",
+      "handler": "canvas-paid-blog.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/canvas-paid-blogs/:id",
+      "handler": "canvas-paid-blog.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/canvas-paid-blogs/:id",
+      "handler": "canvas-paid-blog.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

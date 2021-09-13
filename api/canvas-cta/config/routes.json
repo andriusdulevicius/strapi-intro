@@ -1,0 +1,28 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/canvas-cta",
+      "handler": "canvas-cta.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/canvas-cta",
+      "handler": "canvas-cta.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/canvas-cta",
+      "handler": "canvas-cta.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

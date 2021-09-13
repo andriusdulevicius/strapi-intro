@@ -1,0 +1,34 @@
+{
+  "kind": "collectionType",
+  "collectionName": "canvas_contacts",
+  "info": {
+    "name": "canvas-contacts",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "phone": {
+      "type": "string"
+    },
+    "Fax": {
+      "type": "string"
+    },
+    "Email": {
+      "type": "string"
+    },
+    "icons": {
+      "type": "boolean",
+      "default": true
+    },
+    "contact": {
+      "collection": "canvas-shipping",
+      "via": "contacts",
+      "dominant": true
+    }
+  }
+}
